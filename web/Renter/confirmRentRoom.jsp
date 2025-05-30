@@ -222,16 +222,7 @@
                                     </formdawdawdaw>
                                 </div>-->
                                     <div class="payment-options">
-                                        <div></div>
-                                    <form action="PaymentController" method="post">
-                                        <input type="hidden" name="roomID" value="<%= roomDetail.getRoomID() %>">
-                                        <input type="hidden" name="amount" value="<%= formattedFeeTotal %>">
-                                        <input type="hidden" name="userID" value="<%= userID %>">
-                                        <input type="hidden" name="flag" value="1">
-                                        <button type="submit" name="paymentMethod" value="online">Pay Online</button>
-                                        <a href="RenterRoomController?service=cancelRoom&roomID=<%= roomDetail.getRoomID() %>" class="cancel-link">Cancel</a>
-                                    </form>
-                                </div>
+                                  
                             </div>
                             <!-- end payment -->
                         </div>
