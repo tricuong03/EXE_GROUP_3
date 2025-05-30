@@ -221,6 +221,8 @@
                                         <a href="RenterRoomController?service=cancelRoom&roomID=<%= roomDetail.getRoomID() %>" class="cancel-link">Cancel</a>
                                     </formdawdawdaw>
                                 </div>-->
+
+
                                     <div class="payment-options">
                                     <form action="PaymentController" method="post">
                                         <input type="hidden" name="roomID" value="<%= roomDetail.getRoomID() %>">
