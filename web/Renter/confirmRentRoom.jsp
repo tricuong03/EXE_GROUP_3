@@ -222,6 +222,7 @@
                                     </formdawdawdaw>
                                 </div>-->
                                     <div class="payment-options">
+                                        <div></div>
                                     <form action="PaymentController" method="post">
                                         <input type="hidden" name="roomID" value="<%= roomDetail.getRoomID() %>">
                                         <input type="hidden" name="amount" value="<%= formattedFeeTotal %>">
