@@ -219,7 +219,7 @@
                                         <input type="hidden" name="flag" value="1">
                                         <button type="submit" name="paymentMethod" value="online">Pay Online</button>
                                         <a href="RenterRoomController?service=cancelRoom&roomID=<%= roomDetail.getRoomID() %>" class="cancel-link">Cancel</a>
-                                    </form>
+                                    </formdawdawdaw>
                                 </div>-->
                                     <div class="payment-options">
                                     <form action="PaymentController" method="post">
