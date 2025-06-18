@@ -62,7 +62,7 @@
     </head>
     <body style="text-align:center; font-family: 'Work Sans', sans-serif; padding: 40px 20px;">
     <h2>Thanh toán qua mã QR</h2>
-    <p>Mã thanh toán của bạn là: <strong><%= request.getAttribute("roomNumber") %>_<%= randomCode %></strong></p>
+    <p>Mã thanh toán của bạn là: <strong><%= request.getAttribute("email") %>_<%= randomCode %></strong></p>
    
     <div style="margin: 20px auto;">
         <img src="<%= request.getContextPath() %>/Image/payment.jpg" alt="QR Code" style="width: 300px; height: auto; border: 2px solid #ccc; border-radius: 8px;"/>

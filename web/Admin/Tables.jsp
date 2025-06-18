@@ -99,21 +99,18 @@
 
                                             <td>${acc.userMail}</td>
                                             <td>${acc.userPassword}</td>
-                                            <td><c:if test="${acc.userRole == 1}">
-                                                    Renter
-                                                </c:if>
-                                                <c:if test="${acc.userRole == 2}">
-                                                    Owner
-                                                </c:if>
-                                                <c:if test="${acc.userRole == 3}">
-                                                    Security
-                                                </c:if>
-                                                <c:if test="${acc.userRole == 4}">
-                                                    Admin
-                                                </c:if>
-                                                <c:if test="${acc.userRole == 0}">
-                                                    DeActive
-                                                </c:if></td>
+                                           <td>
+    <form method="post" action="manage">
+    <input type="hidden" name="userID" value="${acc.userID}" />
+   <select name="userRole">
+    <option value="1" ${acc.userRole == 1 ? 'selected' : ''}>Renter</option>
+    <option value="2" ${acc.userRole == 2 ? 'selected' : ''}>Owner</option>
+    <option value="3" ${acc.userRole == 3 ? 'selected' : ''}>Security</option>
+    <option value="4" ${acc.userRole == 4 ? 'selected' : ''}>Admin</option>
+</select>
+    <button type="submit">Cập nhật</button>
+</form>
+</td>
 
                                             <td>
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#editModal" data-email="${acc.userMail}" style="margin-right: 10px">

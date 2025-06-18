@@ -147,7 +147,22 @@ public class AccountDAO extends MyDAO {
         }
         return null;
     }
+    
 
+    public void updateUserRole(int userID, int newRole) {
+    try {
+        PreparedStatement ps;
+            ResultSet rs;
+           String sql = "UPDATE Account SET userRole = ? WHERE userID = ?"; 
+            ps = connection.prepareStatement(sql);
+        ps.setInt(1, newRole);
+        ps.setInt(2, userID);
+        ps.executeUpdate();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+    
     public boolean updateUserPassword(String email, String password) {
         try {
             PreparedStatement ps;
